@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.cdnfonts.com/css/overused-grotesk" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <ul class="nav-links">
+      <li class="nav-link"><a class="nav-alink" href="#hello">Home</a></li>
+      <li class="nav-link"><a class="nav-alink" href="#projects">Projects</a></li>
+      <li class="nav-link"><a class="nav-alink" href="#work">Experience</a></li>
+    </ul>
+  </nav>
+  <div id="parallax">
+    <section id="hello">
+      <h1>&nbsp;HELLO, <br />I'M <span class="highlight">JONAS</span></h1>
+      <p>A Computer Science student at the National University of Singapore passionate about
+        <span class="highlight">software development</span> and <span class="highlight">design</span>.
+      </p>
+    </section>
+    <!-- <section id="bio">
+      <h2>BIO</h2>
+      <p>Hi! I'm Jonas, a Computer Science student at the National University of Singapore. I'm passionate about
+        software development and design. I'm always looking for opportunities to learn and grow, and I'm excited to
+        contribute to projects that make a difference. I'm currently looking for internships for Summer 2022, so feel
+        free to reach out to me!</p>
+    </section> -->
+    <section id="projects">
+      <h2>PROJECTS</span></h2>
+      <div class="grid">
+        <div class="project-container this">
+          <a href="#hello" class="box">
+            <div class="content">
+              <img src="./this.png" alt="">
+            </div>
+          </a>
+          <span class="project-title" data-text="this website">this website</span>
+          <span class="project-subtitle">— HTML + CSS + JS</span>
+        </div>
+        <div class="project-container cvwo">
+          <a href="https://www.comp.nus.edu.sg/~vwo/projects/2023-lbsa.html" target="_blank" class="box">
+            <div class="content">
+              <img
+                src="https://www.comp.nus.edu.sg/~vwo/assets/img/projects/2023-lbsa/review_monthly_statements_react.png"
+                alt="" onmouseenter="startGif()" onmouseleave="stopGif()">
+            </div>
+          </a>
+          <span class="project-title" data-text="CVWO ⨯ LBSA">CVWO ⨯ LBSA</span>
+          <span class="project-subtitle">— Ruby on Rails + React</span>
+        </div>
+        <div class="project-container canrecycle">
+          <a href="https://github.com/jonasongg/CanRecycle" target="_blank" class="box">
+            <div class="content">
+              <img src="./canrecycle.png" alt="">
+            </div>
+          </a>
+          <span class="project-title" data-text="CanRecycle?">CanRecycle?</span>
+          <span class="project-subtitle">— Android Studio + Java</span>
+        </div>
+        <div class="project-container forum">
+          <a href="https://foruum.herokuapp.com/" target="_blank" class="box">
+            <div class="content">
+              <img src="./forum.png" alt="">
+            </div>
+          </a>
+          <span class="project-title" data-text="forum">forum</span>
+          <span class="project-subtitle">— Ruby on Rails + React</span>
+        </div>
+        <div class="project-container reposense">
+          <div class="project-titles-right">
+            <span class="project-subtitle project-subtitle__right">(contributor) Java + Vue — </span>
+            <span class="project-title" data-text="RepoSense">RepoSense</span>
+          </div>
+          <a href="https://reposense.org/" target="_blank" class="box">
+            <div class="content">
+              <img src="./reposense.png" alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="work">
+      <h2>WORK EXPERIENCE</h2>
+      <div class="work-container">
+
+        <div class='one-container' onmouseover="toggleExpand(this)">
+          <span class="year">JAN '24 – NOW</span>
+          <div class="title-container">
+            <h3>Undergraduate Teaching Assistant</h3>
+            <h4>National University of Singapore</h4>
+          </div>
+          <div class="description-container">
+            <ul>
+              <li>
+                CS2030S Programming Methodology II
+              </li>
+              <li>
+                CS2103T Software Engineering
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class='one-container' onmouseover="toggleExpand(this)">
+          <span class="year">JUN '23 – AUG '23</span>
+          <div class="title-container">
+            <h3>Web Development Intern</h3>
+            <h4>Computing for Voluntary Welfare Organisations, NUS</h4>
+          </div>
+          <div class="description-container">
+            <ul>
+              <li>
+                Migrated Lions Befrienders' web app frontend from Ruby on Rails to React + Redux for efficiency
+              </li>
+              <li>
+                Improved database query performance by 150% and resolved bugs for enhanced user experience
+              </li>
+              <li>
+                Implemented robust two-factor role-based authentication with Singpass integration for heightened data
+                security and teamwork
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class='one-container' onmouseover="toggleExpand(this)">
+          <span class="year">JUN '22 – NOW</span>
+          <div class="title-container">
+            <h3>Equal Dreams</h3>
+            <h4>Freelance Speech-to-Text-Interpreter</h4>
+          </div>
+          <div class="description-container">
+            <ul>
+              <li>
+                Delivered real-time accessibility services like transcription and note-taking for 10+ d/Deaf students
+              </li>
+              <li>
+                Maintained accuracy over 50+ hours of lessons, collaborating with teams as needed for consistency
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class='one-container' onmouseover="toggleExpand(this)">
+          <span class="year">FEB '20 – MAR '20</span>
+          <div class="title-container">
+            <h3>National Kidney Foundation Singapore</h3>
+            <h4>Administrative Assistant</h4>
+          </div>
+          <div class="description-container">
+            <ul>
+              <li>
+                Assisted in digitising NKF patient records with barcoding and Excel macros for improved data management
+              </li>
+              <li>
+                Provided training and communicated workflow to staff for seamless continuation of the digitisation
+                project
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <footer>
+      <!-- <a href="#hello" class="icon-button icon-button-end">
+        <span class="fa-solid fa-door-closed"></span>
+        <span class="fa-solid fa-door-open"></span>
+      </a> -->
+      <!-- <div class="footer-padding"></div> -->
+      <a class="icon-button" href="https://www.linkedin.com/in/jonas-ong/" target="_blank">
+        <span class="fa-brands fa-linkedin"></span>
+      </a>
+      <a class="icon-button" href="https://github.com/jonasongg/" target="_blank">
+        <span class="fa-brands fa-github"></span>
+      </a>
+      <a class="icon-button" href="mailto:jonasong2@gmail.com" target="_blank">
+        <span class="fa-solid fa-envelope"></span>
+      </a>
+      <div class="footer-padding"></div>
+      <a href="#hello" class="icon-button icon-button-end">
+        <span class="fa-solid fa-arrow-up"></span>
+      </a>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/f936bcdaf4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
