@@ -121,6 +121,10 @@ nav {
 
     opacity: calc(1 - var(--scroll) / 5 + 0.2);
     filter: blur(calc((var(--scroll) - 0.2) * 3px));
+
+    @media screen and (max-width: 600px) {
+      padding: 0 3rem;
+    }
   }
 }
 
