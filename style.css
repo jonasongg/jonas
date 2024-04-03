@@ -424,9 +424,20 @@ img {
 }
 
 .reposense {
-  grid-area: 12/3/span 8/span 5;
+  grid-area: 12/1/span 8/span 5;
   text-wrap: nowrap;
-  transform: translateZ(1.25px) scale(0.85) rotate(0.5deg);
+  transform: translateZ(1px) scale(0.85) rotate(0.5deg) translateX(10px);
+}
+
+.schism {
+  grid-area: 12/5/span 7/span 5;
+  text-wrap: nowrap;
+  transform: translateZ(1px) scale(0.8) rotate(-0.5deg);
+
+  a>div>img {
+    object-fit: contain;
+    object-position: 0 60%
+  }
 }
 
 @media screen and (max-width: 950px) {

@@ -25,3 +25,5 @@ const toggleExpand = (e) => {
   const description = e.childNodes[5];
   description.classList.add("expand");
 }
+
+PowerGlitch.glitch('.glitch', { playMode: 'hover' })
