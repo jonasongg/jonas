@@ -108,8 +108,32 @@ nav {
   align-items: center;
   height: 100vh;
   padding-top: 3rem;
-  /* background-color: var(--main); */
+  background-color: var(--main);
   transform-style: preserve-3d;
+
+  h1 {
+    font: 900 11rem Overused Grotesk, sans-serif;
+    font-feature-settings: "ss03", "ss06";
+    color: var(--black);
+    letter-spacing: -1px;
+    line-height: 1;
+    transform: translateZ(1.5px) scale(0.75);
+
+    margin-top: 0;
+    margin-bottom: 3rem;
+
+    opacity: calc(1 - var(--scroll) + 0.2);
+    filter: blur(calc((var(--scroll) - 0.2) * 20px));
+
+    @media (max-width: 1200px) {
+      font-size: 7rem;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 4rem;
+      text-align: center;
+    }
+  }
 
   p {
     font: 400 1.5rem Overused Grotesk, sans-serif;
@@ -117,7 +141,7 @@ nav {
     letter-spacing: -0.5px;
     padding: 0 5rem;
     text-align: center;
-    transform: translateZ(-3px) scale(1.6) translateY(3rem);
+    transform: translateZ(1px) scale(0.8) translateY(-5rem);
 
     opacity: calc(1 - var(--scroll) / 5 + 0.2);
     filter: blur(calc((var(--scroll) - 0.2) * 3px));
@@ -125,45 +149,21 @@ nav {
     @media screen and (max-width: 600px) {
       padding: 0 3rem;
     }
+
+    .highlight {
+      color: var(--accent);
+    }
   }
 }
 
-#hello::before {
+/* #hello::before {
   content: "";
   position: absolute;
   background-color: var(--main);
   inset: 0;
   transform: translateZ(-4.5px) scale(2);
   z-index: -1;
-}
-
-h1 {
-  font: 900 11rem Overused Grotesk, sans-serif;
-  font-feature-settings: "ss03", "ss06";
-  color: var(--black);
-  letter-spacing: -1px;
-  line-height: 1;
-  transform: translateZ(-4px) scale(1.8);
-
-  margin-top: 0;
-  margin-bottom: 3rem;
-
-  opacity: calc(1 - var(--scroll) + 0.2);
-  filter: blur(calc((var(--scroll) - 0.2) * 20px));
-
-  @media (max-width: 1200px) {
-    font-size: 7rem;
-  }
-
-  @media (max-width: 600px) {
-    font-size: 4rem;
-    text-align: center;
-  }
-}
-
-.highlight {
-  color: var(--accent);
-}
+} */
 
 #bio {
   background-color: var(--main);
@@ -484,7 +484,7 @@ img {
 
   h2 {
     color: var(--black);
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
     padding-bottom: 2rem;
 
@@ -549,10 +549,20 @@ img {
         content: "";
         position: absolute;
         background-color: var(--black);
-        height: 100%;
+        height: calc(100% - 2rem);
         width: 0.3rem;
         border-radius: 0.15rem;
         left: 3.5rem;
+        bottom: 0;
+      }
+
+      &::after {
+        content: ":";
+        position: absolute;
+        color: var(--black);
+        left: 3.3rem;
+        top: -1rem;
+        font: 500 2.5rem serif;
       }
     }
   }
