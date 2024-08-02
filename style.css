@@ -112,7 +112,7 @@ nav {
   transform-style: preserve-3d;
 
   h1 {
-    font: 900 11rem Overused Grotesk, sans-serif;
+    font: 900 9rem Overused Grotesk, sans-serif;
     font-feature-settings: "ss03", "ss06";
     color: var(--black);
     letter-spacing: -1px;
