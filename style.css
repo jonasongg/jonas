@@ -306,11 +306,12 @@ h2 {
   color: var(--main);
   letter-spacing: -1px;
   position: relative;
+}
 
-  &-right {
-    display: flex;
-    justify-content: flex-end;
-  }
+.project-title-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 @media screen and (min-width: 950px) {
@@ -360,12 +361,29 @@ h2 {
   line-height: 1.8;
 }
 
+@media screen and (min-width: 950px) {
+  .project-subtitle__right::after {
+    content: " —";
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .project-subtitle__right::before {
+    content: "— ";
+  }
+}
+
 @media screen and (max-width: 950px) {
   .project-subtitle {
     opacity: 80%;
-    padding-left: 2rem;
+    padding-left: 1rem;
     font-size: 25px;
     line-height: 1;
+  }
+
+  .project-subtitle__right {
+    padding-left: 0rem;
+    margin-left: -0.5rem;
   }
 
   .project-title {
@@ -445,14 +463,14 @@ h2 {
     }
   }
 
-  .reposense,
-  .project-titles-right {
+  .reposense {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  .project-subtitle__right {
-    transform: translateX(-0.8rem);
+  .project-title-right {
+    flex-direction: row-reverse;
+    margin-bottom: 1.5rem;
   }
 }
 
