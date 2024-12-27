@@ -17,6 +17,7 @@
       <li class="nav-link"><a class="nav-alink" href="#hello">Home</a></li>
       <li class="nav-link"><a class="nav-alink" href="#projects">Projects</a></li>
       <li class="nav-link"><a class="nav-alink" href="#work">Experience</a></li>
+      <div class="pill"></div>
     </ul>
   </nav>
   <div id="parallax">
@@ -36,7 +37,7 @@
     <section id="projects">
       <h2>PROJECTS</span></h2>
       <div class="grid">
-        <div class="project-container this">
+        <div class="project-container" id="this">
           <a href="#hello" class="box">
             <div class="content">
               <img src="./this.png" alt="">
@@ -45,18 +46,17 @@
           <span class="project-title" data-text="this website">this website</span>
           <span class="project-subtitle">— HTML + CSS + JS</span>
         </div>
-        <div class="project-container cvwo">
+        <div class="project-container" id="cvwo">
           <a href="https://www.comp.nus.edu.sg/~vwo/projects/2023-lbsa.html" target="_blank" class="box">
             <div class="content">
-              <img
-                src="https://www.comp.nus.edu.sg/~vwo/assets/img/projects/2023-lbsa/review_monthly_statements_react.png"
-                alt="" onmouseenter="startGif()" onmouseleave="stopGif()">
+              <img src="./review_monthly_statements_react.png" alt="" onmouseenter="startGif()"
+                onmouseleave="stopGif()">
             </div>
           </a>
           <span class="project-title" data-text="CVWO ⨯ LBSA">CVWO ⨯ LBSA</span>
           <span class="project-subtitle">— Ruby on Rails + React</span>
         </div>
-        <div class="project-container canrecycle">
+        <div class="project-container" id="canrecycle">
           <a href="https://github.com/jonasongg/CanRecycle" target="_blank" class="box">
             <div class="content">
               <img src="./canrecycle.png" alt="">
@@ -65,7 +65,7 @@
           <span class="project-title" data-text="CanRecycle?">CanRecycle?</span>
           <span class="project-subtitle">— Android Studio + Java</span>
         </div>
-        <div class="project-container forum">
+        <div class="project-container" id="forum">
           <a href="https://foruum.herokuapp.com/" target="_blank" class="box">
             <div class="content">
               <img src="./forum.png" alt="">
@@ -74,7 +74,7 @@
           <span class="project-title" data-text="forum">forum</span>
           <span class="project-subtitle">— Ruby on Rails + React</span>
         </div>
-        <div class="project-container reposense">
+        <div class="project-container" id="reposense">
           <div class="project-title-right">
             <span class="project-subtitle project-subtitle__right">Java + Vue</span>
             <span class="project-title" data-text="RepoSense">RepoSense</span>
@@ -85,9 +85,9 @@
             </div>
           </a>
         </div>
-        <div class="project-container schism">
+        <div class="project-container" id="schism">
           <a href="https://github.com/jonasongg/schism/" target="_blank" class="box">
-            <div class="content">
+            <div class="content glitch">
               <img src="./schism.svg" alt="">
             </div>
           </a>
@@ -221,7 +221,7 @@
     </footer>
   </div>
   <script src="https://kit.fontawesome.com/f936bcdaf4.js" crossorigin="anonymous"></script>
-  <!-- <script src="https://unpkg.com/powerglitch@latest/dist/powerglitch.min.js"></script> -->
+  <script src="https://unpkg.com/powerglitch@latest/dist/powerglitch.min.js"></script>
   <script src="script.js"></script>
 </body>
 
