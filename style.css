@@ -394,9 +394,12 @@ h2 {
   }
 }
 
-#this {
-  grid-area: 2/1/span 5/span 4;
+.project-container {
   text-wrap: nowrap;
+}
+
+.this {
+  grid-area: 2/1/span 5/span 4;
   transform: translateZ(0.5px) scale(0.9) rotate(0.5deg);
 
   a>div>img {
@@ -405,7 +408,7 @@ h2 {
   }
 }
 
-#cvwo {
+.cvwo {
   grid-area: 1/4/span 5/span 6;
   transform: translateZ(1px) scale(0.8) rotate(-0.5deg);
 
@@ -419,15 +422,13 @@ h2 {
   }
 }
 
-#canrecycle {
+.canrecycle {
   grid-area: 7/2/span 6/span 4;
-  text-wrap: nowrap;
   transform: translateZ(1.5px) scale(0.7) rotate(-0.5deg);
 }
 
-#forum {
+.forum {
   grid-area: 6/5/span 6/span 4;
-  text-wrap: nowrap;
   transform: translateZ(1px) scale(0.8) rotate(0.5deg);
 
   a>div>img {
@@ -436,15 +437,13 @@ h2 {
   }
 }
 
-#reposense {
+.reposense {
   grid-area: 12/1/span 8/span 5;
-  text-wrap: nowrap;
   transform: translateZ(1px) scale(0.85) rotate(0.5deg) translateX(10px);
 }
 
-#schism {
+.schism {
   grid-area: 12/5/span 7/span 5;
-  text-wrap: nowrap;
   transform: translateZ(1px) scale(0.8) rotate(-0.5deg);
 
   .box .content>img {
